@@ -52,7 +52,7 @@
                         <div class="single-product">
                             <img class="img-fluid" src="<?= base_url('assets/images/produk/') ?><?= $new['foto_produk'] ?>" alt="IMG-PRODUCT">
                             <div class="product-details">
-                                <a href="<?= base_url('home/detailProduk/') . $new['id_produk']; ?>" class="btn in-card">
+                                <a href="<?= base_url(); ?>detail-produk/<?= $new['id_produk']; ?>" class="btn in-card">
                                     <h6><?= $new['nama'] ?></h6>
                                 </a>
                                 <div class="price">

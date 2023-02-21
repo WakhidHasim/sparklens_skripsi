@@ -40,7 +40,7 @@
                                     <img src="<?= base_url() ?>assets/images/produk/<?= $value['foto_produk'] ?>" style="width: 100px; height: 80px;">
                                 </td>
                                 <td style="width: 200px;">
-                                    <button type="button" class="d-none d-sm-inline-block btn btn-warning shadow-sm" data-toggle="modal" data-target="#editProduk<?= $value['id_produk'] ?>">
+                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editProduk<?= $value['id_produk'] ?>">
                                         Edit
                                     </button>
                                     <a href="<?= base_url(); ?>delete-produk/<?= $value['id_produk']; ?>" class="btn btn-danger btn-delete">Hapus</a>
@@ -117,7 +117,7 @@ foreach ($produk as $value) { ?>
             <form role="form" action="<?= base_url('add-produk'); ?>" method="POST" enctype="multipart/form-data">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel1">Tambah Data Produk</h5>
+                        <h5 class="modal-title" id="exampleModalLabel1">Edit Data Produk <?= $value['nama'] ?></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

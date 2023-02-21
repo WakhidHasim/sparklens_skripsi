@@ -31,6 +31,7 @@ class Produk extends CI_Controller
 
     public function detailProduk($id)
     {
+        $data['title'] = 'Detail Produk Sparklens';
         $data['product'] = $this->m_produk->detailProduk($id);
 
         $this->load->view('partials/landing/header', $data);

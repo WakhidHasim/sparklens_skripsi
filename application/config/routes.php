@@ -66,7 +66,7 @@ $route['dashboard'] = 'admin/Dashboard';
 // Produk
 $route['produk'] = 'admin/Produk';
 $route['add-produk'] = 'admin/Produk/addProduk';
-$route['edit-produk/(:any)'] = 'admin/Produk/editProduk/$1';
+$route['edit-artikel/(:any)'] = 'admin/Produk/editProduk/$1';
 $route['delete-produk/(:any)'] = 'admin/Produk/deleteProduk/$1';
 
 // Pesanan
@@ -74,10 +74,10 @@ $route['order'] = 'admin/Order';
 
 // End Admin Area
 
-// Landing Area
+// Landing Area/$1
 
 // Produk
 $route['products'] = 'Produk';
-$route['detail-produk/'] = 'Produk';
+$route['detail-produk/(:any)'] = 'Produk/detailProduk/$1';
 
 // End Landing Area
